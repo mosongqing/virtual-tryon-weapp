@@ -1,0 +1,42 @@
+<!--pages/onlogin/onlogin.wxml-->
+<view class="container">
+  <!-- 登录 -->
+  <image bindtap="upImages" src="{{logo}}" bindtap="upImages"></image>
+  <view wx:if="{{islogin==1}}" class="box">
+    <form bindsubmit="login">
+      <text>Login</text>
+      <input type="text" class="loginInput" bindinput="Loginuser"  maxlength="11" placeholder="  请输入11位用户名" value="{{loginuser}}" name="Luser"/>
+      <input password="true" class="loginInput" bindinput="Loginpassword" maxlength="11" placeholder="  请输入11位密码" value="{{loginpassword}}" name="Lpass"/>
+      <view class="switch">
+        <switch type="checkbox" checked="{{switchChecked}}" bindchange="bindswitchchange">记住密码</switch>
+      </view>
+      <button type="primary" form-type="submit" disabled="{{loginbtnstate1}}" class="btn">登录</button>
+      <view class="change">
+        <view bindtap="toregster" class="one">注册界面</view>
+        <view> | </view>
+        <view bindtap="toalter" class="two">修改密码</view>
+      </view>
+    </form>
+  </view>
+  <!-- 注册 -->
+  <view wx:if="{{islogin==2}}" class="box">
+    <form bindsubmit="register">
+      <text>Register</text>
+      <input type="text" class="loginInput" bindinput="Registeruser" maxlength="11" placeholder="  请输入11位用户名"  name="Ruser"/>
+      <input password="true" class="loginInput" disabled="{{isregsteropen}}"  bindinput="Registerpassword" placeholder="  请输入11位密码" maxlength="11" name="Rpass"/>
+      <button type="primary" form-type="submit" disabled="{{loginbtnstate2}}" class="btn">注册</button>
+      <view bindtap="tologin" class="change">登录界面</view>
+    </form>
+  </view>
+  <!-- 修改密码 -->
+  <view wx:if="{{islogin==3}}" class="box">
+    <form bindsubmit="alter">
+      <text>Alter</text>
+      <input type="text" class="loginInput" bindinput="Alteruser" maxlength="11" placeholder="  请输入用户名"  name="Auser"/>
+      <input password="true" class="loginInput"  bindinput="Alterpassword" placeholder="   请输入修改密码" maxlength="11" name="Apass" disabled="{{isusertrue}}"/>
+      <button type="primary" form-type="submit" disabled="{{loginbtnstate3}}" class="btn">修改密码</button>
+      <view bindtap="tologin" class="change">登录界面</view>
+    </form>
+  </view>
+</view>
+

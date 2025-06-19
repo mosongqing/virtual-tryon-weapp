@@ -1,0 +1,20 @@
+.container {
+  padding: 20rpx;
+}
+
+.section {
+  margin-bottom: 30rpx;
+}
+
+.preview-image {
+  width: 100%;
+  max-height: 400rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #ddd;
+}
+
+.status {
+  font-size: 28rpx;
+  color: #666;
+}

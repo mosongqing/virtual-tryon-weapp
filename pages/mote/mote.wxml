@@ -1,0 +1,37 @@
+<view class="mote-container">
+  <view class="form-title">填写模特信息</view>
+
+  <view class="form-item">
+    <text>性别</text>
+    <picker mode="selector" range="{{['男', '女']}}" bindchange="onGenderChange">
+      <view class="picker">{{gender || '请选择'}}</view>
+    </picker>
+  </view>
+
+  <view class="form-item">
+    <text>身高（cm）</text>
+    <input class="form-input" type="number" placeholder="请输入身高" bindinput="onInput" data-field="height" />
+  </view>
+
+  <view class="form-item">
+    <text>体重（kg）</text>
+    <input class="form-input" type="number" placeholder="请输入体重" bindinput="onInput" data-field="weight" />
+  </view>
+
+  <view class="form-item">
+    <text>胸围（cm）</text>
+    <input class="form-input" type="number" placeholder="例如 90" bindinput="onInput" data-field="bust" />
+  </view>
+
+  <view class="form-item">
+    <text>腰围（cm）</text>
+    <input class="form-input" type="number" placeholder="例如 60" bindinput="onInput" data-field="waist" />
+  </view>
+
+  <view class="form-item">
+    <text>臀围（cm）</text>
+    <input class="form-input" type="number" placeholder="例如 88" bindinput="onInput" data-field="hip" />
+  </view>
+
+  <button class="save-btn" bindtap="onSubmit">保存信息</button>
+</view>

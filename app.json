@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/mote/mote",
+    "pages/onlogin/onlogin",
+    "pages/message/message",
+    "pages/history/history",
+    "pages/index/index",
+    "pages/try/try"
+
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/cat",
+        "pages/dog"
+      ]
+    }, {
+      "root": "packageB",
+      "name": "pack2",
+      "pages": [
+        "pages/apple",
+        "pages/banana"
+      ]
+    }
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/ic/1744377965394.jpg",
+        "selectedIconPath": "/ic/1744377965386.jpg"
+       
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "虚拟试穿",
+        "iconPath": "/ic/1744377965359.jpg",
+        "selectedIconPath": "/ic/1744377965351.jpg"
+        
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/ic/1744377965376.jpg",
+        "selectedIconPath": "/ic/1744377965368.jpg"
+       
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "miniApp": {
+    "useAuthorizePage": true
+  }
+}

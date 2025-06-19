@@ -1,0 +1,77 @@
+/* pages/home/home.wxss */
+/* 样式文件中 */
+/* 圆点的样式  因为大小不一样。所以按钮设置大小之后，背景色记得设置完全透明*/
+
+swiper .wx-swiper-dot {
+    width: 30rpx;
+    height: 6rpx;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(255, 255, 255,0);
+  }
+  /* 未选中 */
+  swiper .wx-swiper-dot::before {
+    width: 20rpx;
+    height: 10rpx;
+    content: '';
+    border-radius: 5rpx;
+   
+    /* flex-grow:1; */
+    background: rgba(255, 255, 255,0.3);
+  }
+  /* 选中 */
+  swiper .wx-swiper-dot-active::before {
+    width: 30rpx;
+    height: 10rpx;
+    border-radius: 5rpx;
+    background: rgba(255, 255, 255,1);
+  }
+  
+  
+  /* 根据需要调整样式 */
+  swiper{
+    height: 800rpx;
+  }
+  image{
+    border-radius: 25rpx;
+    width: 86%;
+    height: 850rpx;
+    object-fit: cover; /* 图片填充方式，根据需要修改 */
+    /* 其他图片样式 */
+  }
+  .b {
+    height: 4600rpx;
+    width: 100%;
+    background-color: white;
+    background-image: 
+      linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+      linear-gradient(to bottom, #e0e0e0 1px, transparent 1px);
+    background-size: 40rpx 40rpx;
+  }
+  
+  button{
+    margin-top: 18rpx;
+    width: 85%;
+    color:rgb(94, 216, 204);
+    background-color: rgb(228, 224, 220);
+  }
+  .images{
+    margin-top: 18rpx;
+    width: 85%;
+    margin-left: 53rpx;
+  }
+  .footer {
+    display: flex; /* 启用 Flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    font-size: 28rpx; /* 字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    color: #666; /* 字体颜色 */
+    padding: 20rpx 0; /* 上下内边距 */
+  }
+  
+  
+  
+  
+  

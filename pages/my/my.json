@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+  "van-grid": "@vant/weapp/grid/index",
+  "van-grid-item": "@vant/weapp/grid-item/index",
+  "van-popup": "@vant/weapp/popup/index",
+  "van-rate": "@vant/weapp/rate/index"
+  }
+}

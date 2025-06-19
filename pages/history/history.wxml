@@ -1,0 +1,16 @@
+<!--pages/history/history.wxml-->
+<view class="history-container">
+  <view class="title">试穿记录</view>
+
+  <block wx:for="{{records}}" wx:key="index">
+    <view class="record-card">
+      <view class="record-time">时间：{{item.time}}</view>
+      <view class="record-info">衣服：{{item.clothing}}</view>
+      <view class="record-info">模特：{{item.model}}</view>
+    </view>
+  </block>
+
+  <view wx:if="{{records.length === 0}}" class="no-record">
+    暂无试穿记录~
+  </view>
+</view>

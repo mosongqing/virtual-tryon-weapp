@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="section">
+    <button bindtap="choosePersonImage">上传模特图（拍照或相册）</button>
+    <image wx:if="{{personImage}}" src="{{personImage}}" mode="aspectFit" class="preview-image"/>
+  </view>
+
+  <view class="section">
+    <button bindtap="chooseTopGarmentImage">上传上衣图（拍照或相册）</button>
+    <image wx:if="{{topGarmentImage}}" src="{{topGarmentImage}}" mode="aspectFit" class="preview-image"/>
+  </view>
+
+  <view class="section">
+    <button bindtap="chooseBottomGarmentImage">上传裤子图（拍照或相册）</button>
+    <image wx:if="{{bottomGarmentImage}}" src="{{bottomGarmentImage}}" mode="aspectFit" class="preview-image"/>
+  </view>
+
+  <view class="section">
+    <button bindtap="submitTask" type="primary">提交试衣任务</button>
+    
+  </view>
+
+  <view class="section status">
+    <text>{{status}}</text>
+  </view>
+
+  <view class="section">
+    <text>生成结果图像：</text>
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="aspectFit" class="preview-image"/>
+    <button wx:if="{{imageUrl}}" bindtap="saveImage">保存图像到相册</button>
+  </view>
+  <text>注：请提供正面照，获得较好体验。结果基于ai大模型生成，准确与否请自行判断！</text>
+</view>

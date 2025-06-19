@@ -1,0 +1,64 @@
+/* pages/onlogin/onlogin.wxss */
+.container{
+  background-image: url(https://img1.baidu.com/it/u=3542875750,2038850757&fm=253&fmt=auto&app=138&f=PNG?w=375&h=667);
+  height: 1334rpx;
+  margin: 0 auto;
+}
+.box{
+  margin: 20rpx 20rpx;
+  padding:50rpx 20rpx;
+  display: block;
+}
+.box text{
+  font-size: 60rpx;
+  font-family: sans-serif;
+  text-align: center;
+  height: 60rpx;
+  color: azure;
+  margin-bottom: 100rpx;
+  display: block;
+}
+.loginInput{
+  border:1rpx solid #a0d0f0;
+  border-radius: 20rpx;
+  width: 60%;
+  margin-left: 130rpx;
+  margin-top: 30rpx;
+  height: 80rpx;
+  display: block;
+  color: aqua;
+}
+
+.switch{
+  margin-left: 130rpx;
+  margin-top: 30rpx;
+  color: aliceblue;
+}
+.btn{
+  margin-top: 60rpx;
+  border-radius: 30rpx;
+  width: 35%;
+}
+.change{
+  padding-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: coral;
+
+}
+.one{
+  margin-right: 20rpx;
+}
+.two{
+  margin-left: 20rpx;
+}
+.container image{
+  background-color: white;
+  border-radius: 50%;
+  width: 250rpx;
+  height: 250rpx;
+  margin-left: 35%;
+  margin-top: 150rpx;
+}
+

@@ -1,0 +1,39 @@
+/* pages/history/history.wxss */
+.history-container {
+  padding: 40rpx 30rpx;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  color: #333;
+}
+
+.record-card {
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.05);
+}
+
+.record-time {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.record-info {
+  font-size: 28rpx;
+  color: #444;
+}
+
+.no-record {
+  text-align: center;
+  color: #aaa;
+  margin-top: 100rpx;
+  font-size: 28rpx;
+}

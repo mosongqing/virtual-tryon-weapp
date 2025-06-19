@@ -1,0 +1,36 @@
+<!--pages/my/my.wxml-->
+<view>
+<view class="want_one">
+  <view class="img">
+<image src="{{logo}}" bindtap="upImages"></image>
+<view class="img_name">{{img_name}}</view>
+</view>
+<button  bindtap="login1" >{{login}}</button>
+</view>
+<view class="vant1">
+  <van-grid gutter="{{ 10 }}" column-num="3">
+  <van-grid-item link-type="reLaunch"
+    url="/pages/home/home" icon="star" text="我的收藏" />
+  <van-grid-item icon="smile-comment" link-type="reLaunch" url="/pages/message/message" text="我的搭配" />
+  <van-grid-item icon="records" link-type="reLaunch" url="/pages/history/history" text="试穿记录" />
+</van-grid>
+</view>
+<view class="vant2">
+  <van-cell-group inset >
+ <van-popup  closeable round show="{{ show }}" bind:close="onClose" position="bottom"
+  custom-style="height: 20%;"><van-rate value="{{ value }}" bind:change="onChange"  /><button>确定</button></van-popup>
+
+  <van-cell icon="good-job-o" title="软件评分" is-link size="large"   bindtap="showPopup"/>
+
+  <van-popup show="{{ show1 }}" bind:close="onClose" position="bottom"
+  custom-style="height: 20%;" round>邮箱：mosongqing@qq.com，QQ：1926412875</van-popup>
+  <van-cell icon="share-o" title="软件分享" is-link size="large" bindtap="showPopup1" />
+  <van-cell icon="brush-o" title="清除缓存" is-link size="large" bindtap="showAlert"/>
+
+  <van-cell icon="label-o" title="查看隐私政策" link-type="reLaunch" url="/pages/try/try" is-link size="large"inset/>
+
+  <van-cell icon="phone-o" title="联系我们" is-link size="large"  bindtap="PhoneCall"/>
+
+</van-cell-group>
+</view>
+</view>

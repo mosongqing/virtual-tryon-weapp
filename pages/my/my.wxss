@@ -1,0 +1,36 @@
+.img image{
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+}
+.img{
+  display: flex;
+  background-color: #ccc;
+}
+.img img_name{
+  padding-top: 5rpx;
+  height: 5rpx;
+}
+ button{
+  margin-top: 25rpx;
+  background-color:#ccc;
+  width: 50%;
+  /* margin-bottom: 5rpx; */
+}
+.vant2{
+  margin-top: 35rpx;
+}
+.want_one{
+  border-radius: 10%;
+  margin-bottom: 20rpx;
+  border:3px solid white;
+  background-color: #ccc;
+  height: 339rpx;
+}
+.img_name{
+  padding-left: 20rpx;
+  padding-top: 125rpx;
+}
+

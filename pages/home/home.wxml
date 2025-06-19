@@ -1,0 +1,28 @@
+<!--pages/home/home.wxml-->
+<view class="b">
+  <view class="abc">
+    <van-search value="{{ value }}"  
+  shape="round" label="" background="white"
+  placeholder="请输入搜索关键词" />
+  </view >
+  <view>
+    <swiper style="text-align: center;" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}" indicator-color="#999" indicator-active-color="white" 	circular="true">
+  <swiper-item>
+    <image src="http://47.113.125.45:8080/image/f09282df-0ed3-43c2-ae25-07a44dad670a_1.jpg">1</image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://47.113.125.45:8080/image/3e96f480-e4bb-437e-a66b-796a32b46beb_8.jpg">2</image>
+  </swiper-item>
+  <swiper-item>
+    <image src="http://47.113.125.45:8080/image/f09282df-0ed3-43c2-ae25-07a44dad670a_1.jpg">3</image>
+  </swiper-item>
+</swiper>
+</view>
+<button bindtap="">"showing"出你的风格</button>
+<image src="https://img.alicdn.com/imgextra/i4/2206671326464/O1CN01aFOouc1xcYyPNqg3m_!!2206671326464.jpg" class="images"></image>
+<image src="https://th.bing.com/th/id/R.4abdf7259bc35b562a998a56a5132989?rik=tXUajJTH00uElg&riu=http%3a%2f%2fwww.jift.edu.cn%2f__local%2f4%2fAB%2fDF%2f7259BC35B562A998A56A5132989_12038B31_1FE3D.jpg&ehk=OOe4LyKkodMSUZch3%2fhGvnHNo%2bB89fWDzsSiga2p0AY%3d&risl=&pid=ImgRaw&r=0" class="images"></image>
+<image src="https://img.alicdn.com/bao/uploaded/i1/1057094065/O1CN010DcuSI1ftojiGqDhq_!!1057094065.jpg" class="images"></image>
+<image src="https://img.shetu66.com/2023/04/19/1681866456328338.jpg" class="images"></image>
+  <!-- 新增的“到底了”提示 -->
+  <view class="footer">到底了~~~</view>
+</view>

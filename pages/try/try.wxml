@@ -1,0 +1,50 @@
+<!--pages/try/try.wxml-->
+<view class="container">
+  <view class="title">隐私政策</view>
+  
+  <view class="section">
+    <view class="subtitle">1. 信息收集</view>
+    <view class="content">
+      我们承诺不会收集、存储或使用您的个人信息。我们不会要求您提供任何个人身份信息（如姓名、地址、电话号码等）。所有与 “AI 试衣” 相关的操作仅基于设备数据和服装展示，用户无需提供任何敏感信息。
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="subtitle">2. 提供的服务</view>
+    <view class="content">
+      <text>• 服装展示：提供各类服装展示，供用户浏览。</text>
+      <text>• 2D 虚拟试衣：通过上传图片，模拟不同款式的服装试穿效果。</text>
+      <text>• AI 试衣体验：利用 AI 技术实现服装与用户图像的智能匹配与展示。</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="subtitle">3. 不收集个人信息</view>
+    <view class="content">
+      在提供 “AI 试衣” 服务的过程中，我们不会收集任何个人信息，也不会通过我们的服务存储、处理或分享您的数据。所有的数据处理仅限于 “虚拟试衣展示”，且仅在本地进行处理。
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="subtitle">4. 用户数据安全</view>
+    <view class="content">
+      我们严格遵守数据保护的相关法规，确保您的隐私安全。您上传的图片和数据仅用于 “AI 试衣” 服务的展示，且仅在本地进行处理，确保不会被未经授权的第三方访问。
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="subtitle">5. 用户权益</view>
+    <view class="content">
+      您有权随时撤销任何对本服务的授权，且可以随时停止使用本应用。我们不会保存您的使用记录或任何图像数据。
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="subtitle">6. 联系我们</view>
+    <view class="content">
+      如果您对隐私政策有任何疑问或担忧，欢迎随时联系我们。我们将竭诚为您解答。
+    </view>
+  </view>
+
+  <button class="confirm-btn" bind:tap="goBack">返回</button>
+</view>

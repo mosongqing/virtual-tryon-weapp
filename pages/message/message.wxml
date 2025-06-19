@@ -1,0 +1,31 @@
+<view class="bg-container">
+  <!-- 背景图加动画类 -->
+  <view class="bg-image {{fadeInClass}}" style="background-image: url({{bgImageUrl}});"></view>
+
+  <!-- 菜单容器不受动画影响 -->
+  <view class="menu-container">
+    <scroll-view scroll-y="true" class="scroll-box">
+      <!-- 衣服选项 -->
+      <image src="http://47.113.125.45:8080/image/a7199efb-61ad-4b24-9b15-078cf8919078_1.png" class="menu-img" bindtap="onImageTap" data-key="衣服1" />
+      <image src="http://47.113.125.45:8080/image/080aab34-874d-46e2-be5c-7a002f76c861_2.png" class="menu-img" bindtap="onImageTap" data-key="衣服2" />
+      <image src="http://47.113.125.45:8080/image/4e49123b-aa90-4a70-8ad6-e434ff492a69_3.png" class="menu-img" bindtap="onImageTap" data-key="衣服3" />
+      <image src="http://47.113.125.45:8080/image/e2f17134-8230-4a35-979e-040f8c467700_4.png" class="menu-img" bindtap="onImageTap" data-key="衣服4" />
+      <image src="http://47.113.125.45:8080/image/04eeeb19-946f-499b-9244-948e4fe864d8_5.jpg" class="menu-img" bindtap="onImageTap" data-key="衣服5" />
+      <image src="http://47.113.125.45:8080/image/dcb6dc64-308e-41ef-901b-61c6cda61ae3_6.jpg" class="menu-img" bindtap="onImageTap" data-key="衣服6" />
+      <image src="" class="menu-img" bindtap="onImageTap" data-key="衣服7" />
+      <image src="http://47.113.125.45:8080/image/f4fc199e-1d64-4361-bf13-4f8f84991e68_8.png" class="menu-img" bindtap="onImageTap" data-key="衣服8" />
+      <image src="http://47.113.125.45:8080/image/575b97f5-1930-4516-a7fc-e377963b7eab_9.png" class="menu-img" bindtap="onImageTap" data-key="衣服9" />
+      <!-- <image src="" class="menu-img" bindtap="onImageTap" data-key="衣服1" /> -->
+      <!-- 其他图片... -->
+    </scroll-view>
+    <text>衣服</text>
+  </view>
+</view>
+
+<!-- 底部按钮 -->
+<!-- 模特形态按钮 -->
+<button bindtap="goToModelPage">模特形态</button>
+<!-- pages/index/index.wxml -->
+<button open-type="contact" show-message-card="true" send-message-path="/pages/index/index" send-message-title="虚拟试衣间">在线客服</button>
+<button bindtap="goToModelPage2">ai试衣</button>
+
